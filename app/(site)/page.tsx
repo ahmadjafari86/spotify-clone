@@ -11,10 +11,20 @@ export default function Home() {
               Welcome to music
             </h1>
             <div className="gird grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 mt-4">
-              <ListItem />
+              <ListItem
+                image="/images/liked.png"
+                name="Liked Songs"
+                href="Liked"
+              />
             </div>
           </div>
         </Header>
+        <div className="mt-2 mb-7 px-6">
+          <div className="flex items-center justify-between">
+            <h1 className="text-white text-2xl font-semibold">Newest songs</h1>
+          </div>
+          <div>List of songs</div>
+        </div>
       </h2>
     </main>
   );
